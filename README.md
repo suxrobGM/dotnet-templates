@@ -2,7 +2,7 @@
 
 # .NET Templates
 
-This repository hosts a Collection of high-quality .NET templates for building highly scalable applications.
+This repository hosts a collection of high-quality .NET templates for building highly scalable applications using best practices.
 
 ## Available Templates
 
