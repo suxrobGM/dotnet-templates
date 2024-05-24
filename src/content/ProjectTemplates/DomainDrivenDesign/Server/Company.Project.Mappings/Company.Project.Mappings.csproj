@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <Target Name="Mapster">
+        <Exec WorkingDirectory="$(ProjectDir)" Command="dotnet build -p:CopyLocalLockFileAssemblies=true"/>
+        <Exec WorkingDirectory="$(ProjectDir)" Command="dotnet tool restore"/>
+        <Exec WorkingDirectory="$(ProjectDir)" Command="dotnet mapster extension -a &quot;$(TargetDir)$(ProjectName).dll&quot;"/>
+        <Exec WorkingDirectory="$(ProjectDir)" Command="dotnet mapster mapper -a &quot;$(TargetDir)$(ProjectName).dll&quot;"/>
+    </Target>
+
+    <ItemGroup>
+        <Generated Include="**\*.g.cs"/>
+    </ItemGroup>
+    <Target Name="CleanGenerated">
+        <Delete Files="@(Generated)"/>
+    </Target>
+
+    <ItemGroup>
+        <PackageReference Include="Mapster.Core" Version="1.2.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\Shared\Company.Project.Shared.Models\Company.Project.Shared.Models.csproj"/>
+        <ProjectReference Include="..\Company.Project.Domain\Company.Project.Domain.csproj"/>
+    </ItemGroup>
+
+</Project>

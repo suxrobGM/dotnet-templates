@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- The package metadata -->
+    <PackageId>FishbowlSoftware.Templates.DDD</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Title>Domain-Driven Design Templates for .NET</Title>
+    <Authors>Sukhrob Ilyosbekov</Authors>
+    <Description>Collection of .NET templates for Domain-Driven Design (DDD), including CQRS command, query, and domain event classes, alongside a starter project for ASP.NET Core Web API.</Description>
+    <PackageTags>DDD; CQRS; .NET; Templates; Domain-Driven Design; ASP.NET Core; Web API</PackageTags>
+
+    <!-- Keep package type as 'Template' to show the package as a template package on nuget.org and make your template available in dotnet new search.-->
+    <PackageType>Template</PackageType>
+    <TargetFramework>net8.0</TargetFramework>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <LocalizeTemplates>false</LocalizeTemplates>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.TemplateEngine.Tasks" Version="*" PrivateAssets="all" IsImplicitlyDefined="true"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="content\**\*" Exclude="content\**\bin\**;content\**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+</Project>

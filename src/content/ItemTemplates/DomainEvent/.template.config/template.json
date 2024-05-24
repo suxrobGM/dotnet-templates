@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Sukhrob Ilyosbekov",
+  "classifications": [ "DDD", "Template" ],
+  "name": "Domain Event Class",
+  "description": "Facilitates rapid development of domain events in DDD architectures, bundling event and handler for seamless integration.",
+  "identity": "DDD.Templates.Item.DomainEventClass",
+  "shortName": "ddd-event",
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  },
+  "sourceName": "EventName",
+  "defaultName": "MyDomainEvent",
+  "symbols": {
+    "DefaultNamespace": {
+      "type": "bind",
+      "binding": "msbuild:RootNamespace",
+      "replaces": "%NAMESPACE%",
+      "defaultValue": "MyNamespace"
+    }
+  },
+  "primaryOutputs": [
+    {
+      "path": "./EventName/EventNameEvent.cs"
+    },
+	{
+      "path": "./EventName/EventNameHandler.cs"
+    }
+  ],
+  "postActions": [
+    {
+	  "description": "Opens generated files in the editor",
+	  "actionId": "84C0DA21-51C8-4541-9940-6CA19AF04EE6",
+      "condition": "(HostIdentifier != \"dotnetcli\" && HostIdentifier != \"dotnetcli-preview\")",
+      "manualInstructions": [
+	    "After the files are opened, replace the default namespaces (`Domain`, `Application`, `Shared`) with the actual namespaces used in your project. This step is crucial for ensuring that the generated classes are correctly integrated into your project's domain, application, and shared layers."
+	  ],
+      "args": {
+        "files": "0;1"
+      },
+      "continueOnError": true
+    }
+  ]
+}

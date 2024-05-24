@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/ide.host",
+  "symbolInfo": [
+    {
+      "id": "DatabaseProvider",
+      "name": {
+        "text": "Select database provider to be used in the project"
+      },
+      "isVisible": true
+    },
+    {
+      "id": "DatabaseConnectionString",
+      "name": {
+        "text": "Enter the database connection string"
+      },
+      "isVisible": true
+    }
+  ]
+}

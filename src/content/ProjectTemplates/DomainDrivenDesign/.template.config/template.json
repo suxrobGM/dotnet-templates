@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Sukhrob Ilyosbekov",
+  "classifications": [
+    "DDD",
+    "Web",
+    "Web API"
+  ],
+  "identity": "DDD.Templates.Project.WebApi",
+  "name": "Domain-Driven Design Web API Project",
+  "description": "A comprehensive template for initiating projects based on Domain-Driven Design architecture, tailored for web applications. The template integrates essential components and conventions to kickstart a DDD-aligned project, promoting best practices in organizing domain models, services, and infrastructure setup.",
+  "shortName": "ddd-api",
+  "sourceName": "Company.Project",
+  "defaultName": "CompanyName.ProjectName",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "symbols": {
+    "DatabaseProvider": {
+      "type": "parameter",
+      "description": "Select database provider to be used in the project",
+      "datatype": "choice",
+      "allowMultipleValues": false,
+      "replaces": "{DATABASE_PROVIDER}",
+      "fileRename": "DatabaseProvider",
+      "choices": [
+        {
+          "choice": "SqlServer",
+          "description": "Microsoft SQL Server database"
+        },
+        {
+          "choice": "Sqlite",
+          "description": "Sqlite database"
+        },
+        {
+          "choice": "PostgreSql",
+          "description": "PostgreSQL database"
+        },
+        {
+          "choice": "MySql",
+          "description": "MySQL database"
+        }
+      ],
+      "defaultValue": "SqlServer"
+    },
+    "SqlServer": {
+      "type": "computed",
+      "value": "DatabaseProvider == 'SqlServer'"
+    },
+    "Sqlite": {
+      "type": "computed",
+      "value": "DatabaseProvider == 'Sqlite'"
+    },
+    "PostgreSql": {
+      "type": "computed",
+      "value": "DatabaseProvider == 'PostgreSql'"
+    },
+    "MySql": {
+      "type": "computed",
+      "value": "DatabaseProvider == 'MySql'"
+    },
+    "DatabaseConnectionString": {
+      "type": "parameter",
+      "description": "The connection string to the database",
+      "datatype": "string",
+      "defaultValue": "Data Source=localhost;Database=MyDatabase;User Id=myUsername;Password=myPassword;",
+      "replaces": "{CONNECTION_STRING}"
+    }
+  }
+}
