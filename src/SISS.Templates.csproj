@@ -6,7 +6,7 @@
     <PackageVersion>1.0.0</PackageVersion>
     <Title>.NET Templates</Title>
     <Authors>Sukhrob Ilyosbekov</Authors>
-    <Description>Collection of high-quality .NET templates for building high scalable applications. It includes Domain-Driven Design (DDD) project template, CQRS command, query, and domain event class item templates.</Description>
+    <Description>Collection of high-quality .NET templates for building highly scalable applications. It includes Domain-Driven Design (DDD) project template, CQRS command, query, and domain event class item templates.</Description>
     <PackageTags>DDD; CQRS; .NET; Templates; Domain-Driven Design; ASP.NET Core; Web API</PackageTags>
 
     <!-- Keep package type as 'Template' to show the package as a template package on nuget.org and make your template available in dotnet new search.-->
@@ -34,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="README.md" Pack="true" PackagePath="" />
+    <None Include="../README.md" Pack="true" PackagePath="" />
   </ItemGroup>
 
 </Project>
