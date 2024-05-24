@@ -56,7 +56,7 @@ After generating items or projects with these templates, please ensure to:
 
 ### Packing the Templates
 
-To package these templates into a NuGet package, navigate to the root directory of the templates (where the `SISS.Templates.DDD.csproj` file is located) and run:
+To package these templates into a NuGet package, navigate to the root directory of the templates (where the `SISS.Templates.csproj` file is located) and run:
 
 ```bash
 dotnet pack
@@ -68,7 +68,7 @@ This command generates a NuGet package in the ./bin/Release/ directory.
 After packing the templates into a NuGet package, install them to your local machine using the following command:
 
 ```bash
-dotnet new install ./bin/Release/SISS.Templates.DDD.1.0.0.nupkg
+dotnet new install ./bin/Release/SISS.Templates.1.0.0.nupkg
 ```
 
 Make sure to adjust the command with the correct version number if it differs.
@@ -77,7 +77,7 @@ Make sure to adjust the command with the correct version number if it differs.
 To uninstall the templates, use the dotnet new uninstall command followed by the package ID, like so:
 
 ```bash
-dotnet new uninstall SISS.Templates.DDD
+dotnet new uninstall SISS.Templates
 ```
 
 This will remove the templates from your local machine.

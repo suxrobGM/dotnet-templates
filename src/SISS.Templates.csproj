@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <!-- The package metadata -->
-    <PackageId>FishbowlSoftware.Templates.DDD</PackageId>
+    <PackageId>SISS.Templates</PackageId>
     <PackageVersion>1.0.0</PackageVersion>
-    <Title>Domain-Driven Design Templates for .NET</Title>
+    <Title>.NET Templates</Title>
     <Authors>Sukhrob Ilyosbekov</Authors>
-    <Description>Collection of .NET templates for Domain-Driven Design (DDD), including CQRS command, query, and domain event classes, alongside a starter project for ASP.NET Core Web API.</Description>
+    <Description>Collection of high-quality .NET templates for building high scalable applications. It includes Domain-Driven Design (DDD) project template, CQRS command, query, and domain event class item templates.</Description>
     <PackageTags>DDD; CQRS; .NET; Templates; Domain-Driven Design; ASP.NET Core; Web API</PackageTags>
 
     <!-- Keep package type as 'Template' to show the package as a template package on nuget.org and make your template available in dotnet new search.-->

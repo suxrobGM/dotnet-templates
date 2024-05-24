@@ -32,6 +32,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{BBAAFC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Company.Project.Shared.Enums", "src\content\ProjectTemplates\DomainDrivenDesign\Shared\Company.Project.Shared.Enums\Company.Project.Shared.Enums.csproj", "{FF634598-0495-4A99-91A7-27CFECF8CF9C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{9F73D19E-AFCC-4499-939B-3A0762BEFF4A}"
+	ProjectSection(SolutionItems) = preProject
+		docs\mapper-guide.md = docs\mapper-guide.md
+		docs\migration-guide.md = docs\migration-guide.md
+		docs\templates.md = docs\templates.md
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
