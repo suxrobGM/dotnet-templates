@@ -3,7 +3,7 @@ We use [Mapster](https://github.com/MapsterMapper/Mapster) tool to generate mapp
 This guide provides instructions on creating and updating mapper classes.
 
 ## Creating DTOs
-- Navigate to the `Alikai.Factoring.Shared.Models` project.
+- Navigate to the `ProjectName.Shared.Models` project.
 - Create a new record type for the DTO.
 - Follow the naming convention: `{EntityName}Dto`, where `EntityName` is the name of the entity (e.g., `InvoiceDto`).
 
@@ -20,7 +20,7 @@ public record InvoiceDto
 
 ## Creating Mappers
 1. **Create a Mapper interface**:
-    - Navigate to the `Alikai.Factoring.Mappings` project.
+    - Navigate to the `ProjectName.Mappings` project.
     - Create a new interface for the mapper.
     - Follow the naming convention: `I{EntityName}Mapper`, where `EntityName` is the name of the entity (e.g., `IInvoiceMapper`).
     - Annotate your interface with `[Mapper]` in order for tool to pickup for generation.
@@ -28,9 +28,9 @@ public record InvoiceDto
     
 2. **Generate Mappers**:
     - Run the [generate-mappers.cmd](../src/Alikai.Factoring.Mappings/Scripts/generate-mappers.cmd) script to generate mapper classes.
-    - The script will generate mapper classes for all interfaces annotated with [Mapper] in the `Alikai.Factoring.Mappings` project, in the `Mappers` folder.
+    - The script will generate mapper classes for all interfaces annotated with [Mapper] in the `ProjectName.Mappings` project, in the `Mappers` folder.
    
-> **Note**: To clean up generated files, you can run the [cleanup-mappers.cmd](../src/Alikai.Factoring.Mappings/Scripts/cleanup-mappers.cmd) script.
+> **Note**: To clean up generated files, you can run the [cleanup-mappers.cmd](../src/content/ProjectTemplates/DomainDrivenDesign/Server/Company.Project.Mappings/Scripts/cleanup-mappers.cmd) script.
 
 3. **Add Extension Methods**:
     - Create a new static class with the name in the `{EntityName}Ext` in `Extensions` folder.
