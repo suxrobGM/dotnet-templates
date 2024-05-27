@@ -1,15 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <!-- The package metadata -->
     <PackageId>SISS.Templates</PackageId>
     <PackageVersion>1.0.0</PackageVersion>
     <Title>.NET Templates</Title>
     <Authors>Sukhrob Ilyosbekov</Authors>
     <Description>Collection of high-quality .NET templates for building highly scalable applications. It includes Domain-Driven Design (DDD) project template, CQRS command, query, and domain event class item templates.</Description>
     <PackageTags>DDD; CQRS; .NET; Templates; Domain-Driven Design; ASP.NET Core; Web API</PackageTags>
+    <Copyright>Sukhrob Ilyosbekov</Copyright>
+    <RepositoryUrl>https://github.com/suxrobGM/dotnet-templates</RepositoryUrl>
 
-    <!-- Keep package type as 'Template' to show the package as a template package on nuget.org and make your template available in dotnet new search.-->
     <PackageType>Template</PackageType>
     <TargetFramework>net8.0</TargetFramework>
     <IncludeContentInPack>true</IncludeContentInPack>
@@ -18,6 +18,7 @@
     <NoWarn>$(NoWarn);NU5128</NoWarn>
     <NoDefaultExcludes>true</NoDefaultExcludes>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -35,6 +36,7 @@
 
   <ItemGroup>
     <None Include="../README.md" Pack="true" PackagePath="" />
+    <None Include="../LICENSE" Pack="true" PackagePath="" />
   </ItemGroup>
 
 </Project>

@@ -2,9 +2,13 @@
 
 # .NET Templates
 
-This repository hosts a collection of high-quality .NET templates for building highly scalable applications using best practices.
+Collection of high-quality .NET project templates for building highly scalable applications using best practices.
 
 ## Available Templates
+- Domain-Driven Design Web API Project Template
+- CQRS Command Class Template
+- CQRS Query Class Template
+- Domain Event Class Template
 
 ### Domain-Driven Design Web API Project Template
 

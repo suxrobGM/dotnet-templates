@@ -27,7 +27,7 @@ public record InvoiceDto
     - Add mapping method signatures like these: `EntityDto ToDto(Entity)` and `Entity ToEntity(EntityDto)`.
     
 2. **Generate Mappers**:
-    - Run the [generate-mappers.cmd](../src/Alikai.Factoring.Mappings/Scripts/generate-mappers.cmd) script to generate mapper classes.
+    - Run the [generate-mappers.cmd](../src/content/ProjectTemplates/DomainDrivenDesign/Server/Company.Project.Mappings/Scripts/generate-mappers.cmd) script to generate mapper classes.
     - The script will generate mapper classes for all interfaces annotated with [Mapper] in the `ProjectName.Mappings` project, in the `Mappers` folder.
    
 > **Note**: To clean up generated files, you can run the [cleanup-mappers.cmd](../src/content/ProjectTemplates/DomainDrivenDesign/Server/Company.Project.Mappings/Scripts/cleanup-mappers.cmd) script.

@@ -36,7 +36,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{9F73D19E-A
 	ProjectSection(SolutionItems) = preProject
 		docs\mapper-guide.md = docs\mapper-guide.md
 		docs\migration-guide.md = docs\migration-guide.md
-		docs\templates.md = docs\templates.md
 		README.md = README.md
 	EndProjectSection
 EndProject
