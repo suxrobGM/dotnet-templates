@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageId>SISS.Templates</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <Title>.NET Templates</Title>
     <Authors>Sukhrob Ilyosbekov</Authors>
     <Description>Collection of high-quality .NET templates for building highly scalable applications. It includes Domain-Driven Design (DDD) project template, CQRS command, query, and domain event class item templates.</Description>
