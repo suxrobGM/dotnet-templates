@@ -10,7 +10,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Company.Project.Infrastruct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Company.Project.Application", "src\content\ProjectTemplates\DomainDrivenDesign\Server\Company.Project.Application\Company.Project.Application.csproj", "{57956AFE-4D7A-45FF-878D-907BA40A31F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Company.Project.Shared.Core", "src\content\ProjectTemplates\DomainDrivenDesign\Shared\Company.Project.Shared.Core\Company.Project.Shared.Core.csproj", "{9CE8E2B6-5D71-4A68-A435-E5BB3CED39DF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Company.Project.Core", "src\content\ProjectTemplates\DomainDrivenDesign\Shared\Company.Project.Core\Company.Project.Core.csproj", "{9CE8E2B6-5D71-4A68-A435-E5BB3CED39DF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Company.Project.Shared.Models", "src\content\ProjectTemplates\DomainDrivenDesign\Shared\Company.Project.Shared.Models\Company.Project.Shared.Models.csproj", "{FF7852E3-E2AC-494A-A36B-50B56FB51266}"
 EndProject

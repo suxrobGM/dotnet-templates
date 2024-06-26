@@ -2,7 +2,7 @@
 using Company.Project.Domain.Entities;
 using Company.Project.Domain.Persistence;
 using Company.Project.Mappings;
-using Company.Project.Shared.Cqrs;
+using Company.Project.Core.Cqrs;
 using Company.Project.Shared.Models;
 
 namespace Company.Project.Application.Queries;

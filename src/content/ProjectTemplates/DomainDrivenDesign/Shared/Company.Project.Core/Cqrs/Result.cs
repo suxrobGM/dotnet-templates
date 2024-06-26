@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Company.Project.Shared.Cqrs;
+namespace Company.Project.Core.Cqrs;
 
 /// <summary>
 /// Represents the result of an operation.

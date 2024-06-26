@@ -1,4 +1,4 @@
-﻿namespace Company.Project.Shared.Cqrs;
+﻿namespace Company.Project.Core.Cqrs;
 
 /// <summary>
 /// Represents a paged result. This class is used to return a paged list of items.

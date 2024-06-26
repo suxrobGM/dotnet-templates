@@ -1,5 +1,5 @@
 ﻿using System.Text;
-using Company.Project.Shared.Cqrs;
+using Company.Project.Core.Cqrs;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 

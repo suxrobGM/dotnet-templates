@@ -1,7 +1,7 @@
 ﻿using Company.Project.Application.Core;
 using Company.Project.Domain.Entities;
 using Company.Project.Domain.Persistence;
-using Company.Project.Shared.Cqrs;
+using Company.Project.Core.Cqrs;
 
 namespace Company.Project.Application.Commands;
 

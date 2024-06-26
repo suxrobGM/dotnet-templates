@@ -1,4 +1,4 @@
-﻿using Company.Project.Shared.Cqrs;
+﻿using Company.Project.Core.Cqrs;
 using Company.Project.Application.Extensions;
 using MediatR;
 

@@ -1,6 +1,6 @@
 ﻿using Company.Project.Application.Commands;
 using Company.Project.Application.Queries;
-using Company.Project.Shared.Cqrs;
+using Company.Project.Core.Cqrs;
 using Company.Project.Shared.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -9,11 +9,11 @@ namespace Company.Project.API.Controllers;
 
 [Route("users")]
 [ApiController]
-public class UsersController : ControllerBase
+public class UserController : ControllerBase
 {
     private readonly IMediator _mediator;
 
-    public UsersController(IMediator mediator)
+    public UserController(IMediator mediator)
     {
         _mediator = mediator;
     }

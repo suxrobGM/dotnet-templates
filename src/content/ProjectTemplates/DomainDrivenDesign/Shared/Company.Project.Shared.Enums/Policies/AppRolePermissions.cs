@@ -11,7 +11,7 @@ public static class AppRolePermissions
         {
             AppRoles.SuperAdmin => SuperAdmin,
             AppRoles.Admin => Admin,
-            _ => Enumerable.Empty<string>()
+            _ => []
         };
     }
 }

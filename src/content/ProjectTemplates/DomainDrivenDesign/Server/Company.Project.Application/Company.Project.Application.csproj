@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Shared\Company.Project.Shared.Core\Company.Project.Shared.Core.csproj" />
+      <ProjectReference Include="..\..\Shared\Company.Project.Core\Company.Project.Core.csproj" />
       <ProjectReference Include="..\..\Shared\Company.Project.Shared.Models\Company.Project.Shared.Models.csproj" />
       <ProjectReference Include="..\Company.Project.Domain\Company.Project.Domain.csproj" />
       <ProjectReference Include="..\Company.Project.Mappings\Company.Project.Mappings.csproj" />

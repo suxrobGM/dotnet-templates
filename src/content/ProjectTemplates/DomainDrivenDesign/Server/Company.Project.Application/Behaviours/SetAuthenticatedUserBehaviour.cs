@@ -2,7 +2,7 @@
 using Company.Project.Domain.Entities;
 using Company.Project.Domain.Identity;
 using Company.Project.Domain.Persistence;
-using Company.Project.Shared.Cqrs;
+using Company.Project.Core.Cqrs;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
