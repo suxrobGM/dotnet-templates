@@ -22,11 +22,11 @@ internal class DeleteUserHandler : RequestHandler<DeleteUserCommand, Result>
 
         if (user is null)
         {
-            return Result.Failure($"Could not find a user with ID {req.Id}");
+            return Result.Fail($"Could not find a user with ID {req.Id}");
         }
         
         _uow.Repository<User>().Delete(user);
         await _uow.SaveChangesAsync(ct);
-        return Result.Success();
+        return Result.Succeed();
     }
 }

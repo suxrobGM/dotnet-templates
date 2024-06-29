@@ -22,7 +22,7 @@ internal class UpdateUserHandler : RequestHandler<UpdateUserCommand, Result>
 
         if (user is null)
         {
-            return Result.Failure($"Could not find a user with ID {req.Id}");
+            return Result.Fail($"Could not find a user with ID {req.Id}");
         }
 
         if (!string.IsNullOrEmpty(req.Email))
@@ -37,6 +37,6 @@ internal class UpdateUserHandler : RequestHandler<UpdateUserCommand, Result>
         
         _uow.Repository<User>().Update(user);
         await _uow.SaveChangesAsync(ct);
-        return Result.Success();
+        return Result.Succeed();
     }
 }

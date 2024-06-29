@@ -8,7 +8,7 @@ public interface IResult
     /// <summary>
     /// Gets a value indicating whether the operation was successful.
     /// </summary>
-    bool IsSuccess { get; }
+    bool Success { get; }
     
     /// <summary>
     /// Gets the error message.

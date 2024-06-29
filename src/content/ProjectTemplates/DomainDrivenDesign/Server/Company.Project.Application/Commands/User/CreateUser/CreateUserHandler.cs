@@ -22,6 +22,6 @@ internal class CreateUserHandler : RequestHandler<CreateUserCommand, Result>
         
         await _uow.Repository<User>().AddAsync(newUser);
         await _uow.SaveChangesAsync(ct);
-        return Result.Success();
+        return Result.Succeed();
     }
 }

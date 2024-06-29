@@ -23,10 +23,10 @@ internal class GetUserHandler : RequestHandler<GetUserQuery, Result<UserDto>>
 
         if (userEntity is null)
         {
-            return Result<UserDto>.Failure($"Could not find a user with ID {req.Id}");
+            return Result<UserDto>.Fail($"Could not find a user with ID {req.Id}");
         }
 
         var userDto = userEntity.ToDto();
-        return Result<UserDto>.Success(userDto);
+        return Result<UserDto>.Succeed(userDto);
     }
 }

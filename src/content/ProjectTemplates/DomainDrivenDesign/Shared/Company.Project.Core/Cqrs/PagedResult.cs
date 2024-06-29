@@ -29,18 +29,18 @@ public class PagedResult<T> : Result<IEnumerable<T>>
     public int TotalPages { get; set; }
 
     /// <summary>
-    /// Creates a new instance of <see cref="PagedResult{T}"/> with <see cref="IsSuccess"/> set to <c>true</c>.
+    /// Creates a new instance of <see cref="PagedResult{T}"/> with <see cref="Success"/> set to <c>true</c>.
     /// </summary>
     /// <param name="items">The data to be returned in the PagedResult object</param>
     /// <param name="totalItems">The total number of items</param>
     /// <param name="totalPages">The total number of pages</param>
-    public static PagedResult<T> Success(IEnumerable<T>? items, int totalItems, int totalPages) =>
+    public static PagedResult<T> Succeed(IEnumerable<T>? items, int totalItems, int totalPages) =>
         new(items, totalItems, totalPages);
 
     /// <summary>
-    /// Creates a new instance of <see cref="PagedResult{T}"/> with <see cref="IsSuccess"/> set to <c>false</c> and an error message.
+    /// Creates a new instance of <see cref="PagedResult{T}"/> with <see cref="Success"/> set to <c>false</c> and an error message.
     /// </summary>
     /// <param name="error">The error message to be returned in the PagedResult object</param>
-    public new static PagedResult<T> Failure(string error) =>
+    public new static PagedResult<T> Fail(string error) =>
         new(null, 0, 0) { Error = error };
 }

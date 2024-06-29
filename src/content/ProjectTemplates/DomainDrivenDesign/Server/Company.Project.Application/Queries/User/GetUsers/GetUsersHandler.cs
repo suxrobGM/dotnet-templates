@@ -28,6 +28,6 @@ internal class GetUsersHandler : RequestHandler<GetUsersQuery, PagedResult<UserD
             .Select(i => i.ToDto())
             .ToArray();
         
-        return PagedResult<UserDto>.Success(users, totalItems, req.PageSize);
+        return PagedResult<UserDto>.Succeed(users, totalItems, req.PageSize);
     }
 }

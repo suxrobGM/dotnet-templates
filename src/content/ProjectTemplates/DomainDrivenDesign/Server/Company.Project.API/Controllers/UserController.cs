@@ -24,7 +24,7 @@ public class UserController : ControllerBase
     public async Task<IActionResult> GetUserById(string id)
     {
         var result = await _mediator.Send(new GetUserQuery {Id = id});
-        return result.IsSuccess ? Ok(result) : BadRequest(result);
+        return result.Success ? Ok(result) : BadRequest(result);
     }
 
     [HttpGet]
@@ -33,7 +33,7 @@ public class UserController : ControllerBase
     public async Task<IActionResult> GetUsersList([FromQuery] GetUsersQuery query)
     {
         var result = await _mediator.Send(query);
-        return result.IsSuccess ? Ok(result) : BadRequest(result);
+        return ((Result)result).Success ? Ok(result) : BadRequest(result);
     }
     
     [HttpPost]
@@ -42,7 +42,7 @@ public class UserController : ControllerBase
     public async Task<IActionResult> CreateUser([FromBody] CreateUserCommand request)
     {
         var result = await _mediator.Send(request);
-        return result.IsSuccess ? Ok(result) : BadRequest(result);
+        return result.Success ? Ok(result) : BadRequest(result);
     }
 
     [HttpPut("{id}")]
@@ -52,7 +52,7 @@ public class UserController : ControllerBase
     {
         request.Id = id;
         var result = await _mediator.Send(request);
-        return result.IsSuccess ? Ok(result) : BadRequest(result);
+        return result.Success ? Ok(result) : BadRequest(result);
     }
     
     [HttpDelete("{id}")]
@@ -61,6 +61,6 @@ public class UserController : ControllerBase
     public async Task<IActionResult> DeleteUser(string id)
     {
         var result = await _mediator.Send(new DeleteUserCommand {Id = id});
-        return result.IsSuccess ? Ok(result) : BadRequest(result);
+        return result.Success ? Ok(result) : BadRequest(result);
     }
 }
